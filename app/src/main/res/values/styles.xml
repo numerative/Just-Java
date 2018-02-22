@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#CDDC39</item>
+        <item name="colorPrimaryDark">#AFB42B</item>
+        <item name="colorAccent">#0091EA</item>
+
+    </style>
+
+    <!--This will define how the Headers are styled-->
+    <!--<style name="HeaderTextStyle">-->
+        <!--<item name="layout_width">wrap_content</item>-->
+        <!--<item name="layout_height">48dp</item>-->
+        <!--<item name="gravity">center_vertical</item>-->
+        <!--<item name="textAllCaps">true</item>-->
+        <!--<item name="textSize">15sp</item>-->
+    <!--</style>-->
+
+</resources>

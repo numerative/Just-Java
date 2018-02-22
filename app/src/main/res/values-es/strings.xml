@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Sólo Java</string>
+
+    <!--Here go the toppings [CHAR LIMIT=20}-->
+    <string name="toppings">Ingredientes</string>
+
+    <!--Here goes the name [CHAR LIMIT=20}-->
+    <string name="name">Nombre</string>
+
+    <!--
+     Name for the order summary. It will be shown in the format of "Name: Amy" where Amy is the
+     user's name. [CHAR LIMIT=NONE]
+   -->
+    <string name="order_summary_name">Nombre: <xliff:g id="name" example="Amy">%s</xliff:g></string>
+    <string name="thank_you">Gracias!</string>
+</resources>
