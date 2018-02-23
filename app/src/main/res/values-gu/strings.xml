@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">માત્ર કોફી</string>
+
+    <!--Here go the toppings [CHAR LIMIT=20}-->
+    <string name="toppings">ટોપિંગ</string>
+
+    <!--Here goes the name [CHAR LIMIT=20}-->
+    <string name="name">નામ</string>
+    <string name="whipped_cream">ફેંટેલી મલાઈ</string>
+    <string name="chocolate">ચોકલેટ</string>
+    <string name="quantity">માત્રા</string>
+    <string name="order">ઓર્ડર</string>
+
+
+
+    <!--Hereforth begins the Java Strings-->
+    <!--Here goes the Name:Customer_Name [CHAR LIMIT=20}-->
+    <string name="order_summary_name">નામ: <xliff:g id="name" example="Amy">%s</xliff:g></string>
+    <string name="order_summary_whipped_cream">ફેંટેલી મલાઈ ઉમેરો? <xliff:g id="hasWhippedCream" example="true">%b</xliff:g></string>
+    <string name="order_summary_chocolate">ચોકલેટ ઉમેરો? <xliff:g id="hasChocolate" example="true">%b</xliff:g></string>
+    <string name="order_summary_quantity">માત્રા: <xliff:g id="quantity" example="100">%d</xliff:g></string>
+    <string name="order_summary_price">સરવાળો: <xliff:g id="price" example="100">%d</xliff:g></string>
+
+    <string name="thank_you">આભાર</string>
+
+</resources>

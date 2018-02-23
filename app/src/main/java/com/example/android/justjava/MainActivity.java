@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         //Intents to sending an email
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("message/rfc822");
-        intent.putExtra(Intent.EXTRA_SUBJECT, "Order from " + name);
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Order from " + customerName);
         intent.putExtra(Intent.EXTRA_TEXT, displayMessage);
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
