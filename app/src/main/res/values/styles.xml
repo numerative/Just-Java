@@ -3,19 +3,25 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">#CDDC39</item>
-        <item name="colorPrimaryDark">#AFB42B</item>
-        <item name="colorAccent">#0091EA</item>
+        <item name="colorPrimary">#CA944E</item>
+        <item name="colorPrimaryDark">#845730</item>
+        <item name="colorAccent">#7A2F18</item>
 
     </style>
 
-    <!--This will define how the Headers are styled-->
-    <!--<style name="HeaderTextStyle">-->
-        <!--<item name="layout_width">wrap_content</item>-->
-        <!--<item name="layout_height">48dp</item>-->
-        <!--<item name="gravity">center_vertical</item>-->
-        <!--<item name="textAllCaps">true</item>-->
-        <!--<item name="textSize">15sp</item>-->
-    <!--</style>-->
+    <style name="ButtonStyle" parent="TextStyle">
+        <!--Styling of the increment and decrement buttons-->
+        <item name="android:background">@drawable/button_properties</item>
+        <item name="android:layout_width">36dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="TextStyle">
+        <!--Styling of Text-->
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
 
 </resources>
