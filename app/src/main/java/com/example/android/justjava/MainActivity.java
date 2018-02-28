@@ -18,8 +18,6 @@ import android.widget.Toast;
 
 import java.text.NumberFormat;
 
-import static android.R.attr.name;
-
 /**
  * This app displays an order form to order coffee.
  */
@@ -154,5 +152,18 @@ public class MainActivity extends AppCompatActivity {
     private void displayMessage(String message) {
         TextView OrderSummaryTextView = (TextView) findViewById(R.id.order_summary_text_view);
         OrderSummaryTextView.setText(message);
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("quantity", quantity);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        quantity = savedInstanceState.getInt("quantity");
+        displayQuantity(quantity);
     }
 }
