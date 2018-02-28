@@ -17,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.NumberFormat;
+import java.util.Locale;
 
 /**
  * This app displays an order form to order coffee.
@@ -65,17 +66,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Calculates the price of the order.
-     * @return total price.
-     * update: the below method will be replaced by createOrderSummary method.
-     *
-     *  private int calculatePrice() {
-     *  int price = quantity * 5;
-     *  return price;
-     * }
-     */
-
-    /**
      * This method is expected to return a string spanning multiple lines.
      * It is expected to display Quantity, Total Price and some text lines.
      */
@@ -114,7 +104,9 @@ public class MainActivity extends AppCompatActivity {
         displayMessage += "\n" + getString(R.string.order_summary_whipped_cream, hasWhippedCream);
         displayMessage += "\n" + getString(R.string.order_summary_chocolate, hasChocolate);
         displayMessage += "\n" + getString(R.string.order_summary_quantity, quantity);
-        displayMessage += "\n" + getString(R.string.order_summary_price, price);
+        displayMessage += "\n" + getString(R.string.order_summary_price,
+                (NumberFormat.getCurrencyInstance
+                        (new Locale("en", "in")).format(price)));
         displayMessage += "\n" + getString(R.string.thank_you);
 
         displayMessage(displayMessage);
@@ -136,14 +128,6 @@ public class MainActivity extends AppCompatActivity {
     private void displayQuantity(int quantity) {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
         quantityTextView.setText("" + quantity);
-    }
-
-    /**
-     * This method displays the given price on the screen.
-     */
-    private void displayPrice(int number) {
-        TextView OrderSummaryTextView = (TextView) findViewById(R.id.order_summary_text_view);
-        OrderSummaryTextView.setText(NumberFormat.getCurrencyInstance().format(number));
     }
 
     /**

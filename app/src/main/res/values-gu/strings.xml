@@ -20,7 +20,7 @@
     <string name="order_summary_whipped_cream">ફેંટેલી મલાઈ ઉમેરો? <xliff:g id="hasWhippedCream" example="true">%b</xliff:g></string>
     <string name="order_summary_chocolate">ચોકલેટ ઉમેરો? <xliff:g id="hasChocolate" example="true">%b</xliff:g></string>
     <string name="order_summary_quantity">માત્રા: <xliff:g id="quantity" example="100">%d</xliff:g></string>
-    <string name="order_summary_price">સરવાળો: <xliff:g id="price" example="100">%d</xliff:g></string>
+    <string name="order_summary_price">સરવાળો: <xliff:g id="price" example="100">%s</xliff:g></string>
 
     <string name="thank_you">આભાર</string>
 
